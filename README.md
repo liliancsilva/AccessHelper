@@ -18,7 +18,7 @@ Com o AccessHelper, o tempo normalmente destinado a atendimentos poderá ser red
 - Retornar instruções de acesso e observações adicionais.
 
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image1.png"
+src="media/image1.png"
 style="width:5.90556in;height:0.90694in"
 alt="Uma imagem contendo Texto O conteúdo gerado por IA pode estar incorreto." />
 
@@ -34,19 +34,19 @@ A ideia é simples: o usuário faz uma pergunta, o AccessHelper consulta sua bas
 **Visão Geral e Pontos de Extremidade**
 
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image2.png"
+src="media/image2.png"
 style="width:5.90556in;height:3.88958in"
 alt="Texto O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image3.png"
+src="media/image3.png"
 style="width:5.90556in;height:1.99861in"
 alt="Tela de computador com fundo preto O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image4.png"
+src="media/image4.png"
 style="width:5.90556in;height:4.28333in"
 alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image5.png"
+src="media/image5.png"
 style="width:5.90556in;height:2.71806in"
 alt="Interface gráfica do usuário, Texto, Aplicativo O conteúdo gerado por IA pode estar incorreto." />
 
@@ -84,7 +84,7 @@ O AccessHelper utiliza um índice no Azure Cognitive Search com dados de acesso 
 É importante destacar que <u>os dados inseridos na base de conhecimento são fictícios</u>.
 
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image6.png"
+src="media/image6.png"
 style="width:5.90556in;height:4.20486in"
 alt="Interface gráfica do usuário, Aplicativo, Tabela O conteúdo gerado por IA pode estar incorreto." />
 
@@ -93,11 +93,11 @@ alt="Interface gráfica do usuário, Aplicativo, Tabela O conteúdo gerado por I
 A seguir, imagens demonstram o prompt do sistema e a base de dados vinculada.
 
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image7.png"
+src="media/image7.png"
 style="width:5.90556in;height:2.19931in"
 alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image8.png"
+src="media/image8.png"
 style="width:5.90556in;height:2.10139in"
 alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado por IA pode estar incorreto." />
 
@@ -106,23 +106,23 @@ alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado po
 A seguir, o AccessHelper responde a cinco perguntas diferentes.
 
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image9.png"
+src="media/image9.png"
 style="width:5.90556in;height:4.82778in"
 alt="Interface gráfica do usuário, Texto O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image10.png"
+src="media/image10.png"
 style="width:5.90556in;height:4.82917in"
 alt="Interface gráfica do usuário, Texto O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image11.png"
+src="media/image11.png"
 style="width:5.90556in;height:4.78194in"
 alt="Texto O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image12.png"
+src="media/image12.png"
 style="width:5.90556in;height:4.81597in"
 alt="Texto O conteúdo gerado por IA pode estar incorreto." />
 <img
-src="C:\Users\liali\Downloads\Estudos\Mais Mulheres Tech\Azure\Challenge\AccessHelper\media/media/image13.png"
+src="media/image13.png"
 style="width:5.90556in;height:4.83681in"
 alt="Interface gráfica do usuário, Texto O conteúdo gerado por IA pode estar incorreto." />
 
