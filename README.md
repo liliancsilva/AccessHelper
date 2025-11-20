@@ -16,7 +16,7 @@ Com a utilização do AccessHelper, o tempo que normalmente seria destinado para
 - Informar número da solicitação e status da detentora;
 - Retornar instruções de acesso e observações adicionais;
 
-![Fluxograma de funcionalidades](media/image1.png)
+![Fluxograma de funcionalidades](media/Fluxograma.png)
 
 A ideia é simples: o usuário faz uma pergunta, o AccessHelper consulta sua base de conhecimento e retorna a informação solicitada de forma rápida e confiável.
 
@@ -29,10 +29,10 @@ A ideia é simples: o usuário faz uma pergunta, o AccessHelper consulta sua bas
 
 ## Visão Geral e Pontos de Extremidade
 
-![Visão geral 1](media/image2.png)
-![Visão geral 2](media/image3.png)
-![Visão geral 3](media/image4.png)
-![Visão geral 4](media/image5.png)
+![Visão geral 1](media/Visão Geral 1.png)
+![Visão geral 2](media/Visão Geral 2.png)
+![Visão geral 3](media/Visão Geral 3.png)
+![Visão geral 4](media/Visão Geral 4.png)
 
 ## Base de Conhecimento
 
@@ -67,23 +67,23 @@ O AccessHelper utiliza um índice no Azure Cognitive Search com dados de acesso 
 
 > É importante destacar que **os dados inseridos na base de conhecimento são fictícios**.
 
-![Tabela de registros](media/image6.png)
+![Tabela de registros](media/Base de Dados.png)
 
 ## Configuração do AccessHelper
 
 Abaixo há as imagens demonstrando o prompt do sistema e a base de dados vinculada.
 
-![Prompt do sistema](media/image7.png)
-![Base de dados vinculada](media/image8.png)
+![Prompt do sistema](media/Playground_Prompt.png)
+![Base de dados vinculada](media/Playground_Base de Dadosimage8.png)
 
 ## Demonstração
 
 A seguir há a demonstração do AccessHelper respondendo 5 perguntas diferentes.
 
-![Demonstração 1](media/image9.png)
-![Demonstração 2](media/image10.png)
-![Demonstração 3](media/image11.png)
-![Demonstração 4](media/image12.png)
-![Demonstração 5](media/image13.png)
+![Demonstração 1](media/Playground_Teste 1.png)
+![Demonstração 2](media/Playground_Teste 2.png)
+![Demonstração 3](media/Playground_Teste 3.png)
+![Demonstração 4](media/Playground_Teste 4.png)
+![Demonstração 5](media/Playground_Teste 5.png)
 
 Inspirado em interações reais, o AccessHelper não apenas responde à pergunta feita, mas também antecipa informações relacionadas. Na prática, conversas tendem a se prolongar porque nem todas as dúvidas são enviadas de uma vez. Para otimizar o atendimento, o chatbot retorna de forma imediata os principais dados que encontra em sua base.
