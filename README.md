@@ -1,133 +1,89 @@
-<<<<<<< HEAD
-**AccessHelper**
+# AccessHelper
 
-AccessHelper é um chatbot criado para atender ao challenge do Azure Frontier Girls, que exige a criação de um Agente de IA com pelo menos uma ação funcional.
+AccessHelper é um chatbot projetado para atender ao challenge do Azure Frontier Girls, que consiste na criação de um Agente de IA com pelo menos uma ação funcional.
 
-Para cumprir o desafio, optei por desenvolver uma ferramenta aplicável ao meu cotidiano profissional.
+Para atender o desafio, optei pela criação de uma ferramenta que pode ser aplicada no meu cotidiano em meu trabalho atual.
 
-Uma das tarefas que mais consome tempo é responder dúvidas em tempo real sobre status de solicitações, endereços e outras informações complementares.
+Uma das tarefas que mais consome tempo é responder dúvidas em tempo real sobre status de solicitações variadas, endereços e outras informações complementares.
 
-Com o AccessHelper, o tempo normalmente destinado a atendimentos poderá ser redirecionado para tarefas mais complexas, otimizando processos e garantindo maior agilidade — algo altamente valorizado no ramo de telecomunicações.
+Com a utilização do AccessHelper, o tempo que normalmente seria destinado para o atendimento poderá ser redirecionado e aplicado para tarefas complexas, otimizando os processos e garantindo mais agilidade, algo extremamente valorizado no ramo de telecomunicações.
 
-**Funcionalidades**
+## Funcionalidades
 
 - Consultar endereço de um site (equipamento) específico;
 - Verificar tipo de instalação (Greenfield, Rooftop, Indoor);
 - Checar status do pedido de acesso e protocolo de chaves;
 - Informar número da solicitação e status da detentora;
-- Retornar instruções de acesso e observações adicionais.
+- Retornar instruções de acesso e observações adicionais;
 
-<img
-src="media/image1.png"
-style="width:5.90556in;height:0.90694in"
-alt="Uma imagem contendo Texto O conteúdo gerado por IA pode estar incorreto." />
+![Fluxograma de funcionalidades](media/image1.png)
 
 A ideia é simples: o usuário faz uma pergunta, o AccessHelper consulta sua base de conhecimento e retorna a informação solicitada de forma rápida e confiável.
 
-**Tecnologias Utilizadas**
+## Tecnologias Utilizadas
 
-- **Azure Cognitive Search:** utilizado para criar o índice de conhecimento do AccessHelper;
-- **Azure OpenAI:** fornece o modelo de linguagem que interpreta as perguntas dos usuários e gera respostas naturais com base nos dados do índice;
-- **NDJSON:** formato de arquivo utilizado para armazenar os registros de acesso, facilitando a ingestão dos dados no Azure Cognitive Search;
-- **Python:** linguagem usada para manipular os arquivos NDJSON, preparar os dados e interagir com os serviços do Azure.
+- **Azure Cognitive Search:** usado para criar o índice de conhecimento do AccessHelper;
+- **Azure OpenAI:** fornece o modelo de linguagem que interpreta as perguntas dos usuários e gera respostas naturais baseadas nos dados do índice;
+- **NDJSON:** formato de arquivo utilizado para armazenar os registros de acesso, facilitando a ingestão dos dados do Azure Cognitive Search;
+- **Python:** linguagem utilizada para manipular os arquivos NDJSON, preparar os dados e interagir com os serviços do Azure;
 
-**Visão Geral e Pontos de Extremidade**
+## Visão Geral e Pontos de Extremidade
 
-<img
-src="media/image2.png"
-style="width:5.90556in;height:3.88958in"
-alt="Texto O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image3.png"
-style="width:5.90556in;height:1.99861in"
-alt="Tela de computador com fundo preto O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image4.png"
-style="width:5.90556in;height:4.28333in"
-alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image5.png"
-style="width:5.90556in;height:2.71806in"
-alt="Interface gráfica do usuário, Texto, Aplicativo O conteúdo gerado por IA pode estar incorreto." />
+![Visão geral 1](media/image2.png)
+![Visão geral 2](media/image3.png)
+![Visão geral 3](media/image4.png)
+![Visão geral 4](media/image5.png)
 
-**Base de Conhecimento**
+## Base de Conhecimento
 
 O AccessHelper utiliza um índice no Azure Cognitive Search com dados de acesso em formato NDJSON. Cada registro contém:
 
-1. **Identificação e Localização**
-    - id;
-    - site;
-    - endereco;
-    - município;
+1. **Identificação e Localização**  
+   - id;  
+   - site;  
+   - endereco;  
+   - município;
 
-2. **Protocolo de Chaves**
-    - protocolo_chaves;
-    - data_inicio_protocolo;
-    - data_fim_protocolo;
+2. **Protocolo de Chaves**  
+   - protocolo_chaves;  
+   - data_inicio_protocolo;  
+   - data_fim_protocolo;
 
-3. **Status do Protocolo e Detalhes da Instalação**
-    - status_protocolo;
-    - tipo_instalacao;
-    - data_solicitacao;
-    - data_liberacao;
+3. **Status do Protocolo e Detalhes da Instalação**  
+   - status_protocolo;  
+   - tipo_instalacao;  
+   - data_solicitacao;  
+   - data_liberacao;
 
-4. **Período de Detentora e Status de Acesso**
-    - data_inicio_detentora;
-    - data_fim_detentora;
-    - status_detentora;
+4. **Período de Detentora e Status de Acesso**  
+   - data_inicio_detentora;  
+   - data_fim_detentora;  
+   - status_detentora;
 
-5. **Informações Operacionais**
-    - numero_solicitacao;
-    - forma_acesso;
-    - observacoes_adicionais.
+5. **Informações Operacionais**  
+   - numero_solicitacao;  
+   - forma_acesso;  
+   - observacoes_adicionais;
 
-É importante destacar que <u>os dados inseridos na base de conhecimento são fictícios</u>.
+> É importante destacar que **os dados inseridos na base de conhecimento são fictícios**.
 
-<img
-src="media/image6.png"
-style="width:5.90556in;height:4.20486in"
-alt="Interface gráfica do usuário, Aplicativo, Tabela O conteúdo gerado por IA pode estar incorreto." />
+![Tabela de registros](media/image6.png)
 
-**Configuração do AccessHelper**
+## Configuração do AccessHelper
 
-A seguir, imagens demonstram o prompt do sistema e a base de dados vinculada.
+Abaixo há as imagens demonstrando o prompt do sistema e a base de dados vinculada.
 
-<img
-src="media/image7.png"
-style="width:5.90556in;height:2.19931in"
-alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image8.png"
-style="width:5.90556in;height:2.10139in"
-alt="Tela de computador com texto preto sobre fundo branco O conteúdo gerado por IA pode estar incorreto." />
+![Prompt do sistema](media/image7.png)
+![Base de dados vinculada](media/image8.png)
 
-**Demonstração**
+## Demonstração
 
-A seguir, o AccessHelper responde a cinco perguntas diferentes.
+A seguir há a demonstração do AccessHelper respondendo 5 perguntas diferentes.
 
-<img
-src="media/image9.png"
-style="width:5.90556in;height:4.82778in"
-alt="Interface gráfica do usuário, Texto O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image10.png"
-style="width:5.90556in;height:4.82917in"
-alt="Interface gráfica do usuário, Texto O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image11.png"
-style="width:5.90556in;height:4.78194in"
-alt="Texto O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image12.png"
-style="width:5.90556in;height:4.81597in"
-alt="Texto O conteúdo gerado por IA pode estar incorreto." />
-<img
-src="media/image13.png"
-style="width:5.90556in;height:4.83681in"
-alt="Interface gráfica do usuário, Texto O conteúdo gerado por IA pode estar incorreto." />
+![Demonstração 1](media/image9.png)
+![Demonstração 2](media/image10.png)
+![Demonstração 3](media/image11.png)
+![Demonstração 4](media/image12.png)
+![Demonstração 5](media/image13.png)
 
-Inspirado em interações reais, o AccessHelper não apenas responde à pergunta feita, mas também antecipa informações relacionadas. Na prática, conversas tendem a se prolongar, pois nem todas as dúvidas são enviadas de uma vez. Para otimizar o atendimento, o chatbot retorna de forma imediata os principais dados que encontra em sua base.
-=======
-# AccessHelper
-Agente de IA como projeto do challenge Azure Frontier Girls 2025
->>>>>>> 1b5bd86ca39e6b3aa1fa88266749f8c859724510
+Inspirado em interações reais, o AccessHelper não apenas responde à pergunta feita, mas também antecipa informações relacionadas. Na prática, conversas tendem a se prolongar porque nem todas as dúvidas são enviadas de uma vez. Para otimizar o atendimento, o chatbot retorna de forma imediata os principais dados que encontra em sua base.
