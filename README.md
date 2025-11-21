@@ -29,6 +29,7 @@ A ideia é simples: o usuário faz uma pergunta, o AccessHelper consulta sua bas
 
 ## Visão Geral e Pontos de Extremidade
 
+![AccessHelper_CPE}(media/AccessHelper_CPE.png)
 ![Visão geral 1](media/Visão_Geral_1.png)
 ![Visão geral 2](media/Visão_Geral_2.png)
 ![Visão geral 3](media/Visão_Geral_3.png)
